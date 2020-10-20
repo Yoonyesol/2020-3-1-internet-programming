@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head><title>계산해봅시다</title>
+<script>
+function calculate1() {
+	var n1 = document.getElementById("n1");
+    n1.innerHTML = 2 + 4;
+
+}
+
+function calculate2() {
+	var n2 = document.getElementById("n2");
+    n2.innerHTML = 4 * 20 + 64;
+}
+
+function calculate3() {
+	var n1 = document.getElementById("n3");
+    n3.innerHTML = 20/5-8*2;
+}
+</script>
+</head>
+<body >
+<h3>계산해봅시다</h3>
+<hr>
+<form>
+    2 + 4 = <span id="n1" onclick="calculate1()">답</span><br>
+    4 * 20 + 64 = <span id="n2" onclick="calculate2()">답</span><br>
+    20/5-8*2 = <span id="n3" onclick="calculate3()">답</span><br>
+
+</form>
+</body>
+</html>
