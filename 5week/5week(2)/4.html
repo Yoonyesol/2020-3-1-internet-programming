@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>덧셈 계산 게임</title></head>
+<body>
+<h3>덧셈 계산 하시고, 결과를 입력하고 확인 버튼을 클릭하여 정확한지 확인해 보세요.</h3>
+<script>
+
+    var x = Math.floor(Math.random()*100) + 1;
+    var y = Math.floor(Math.random()*100) + 1;
+    document.write(x + "+" + y + "=");
+
+    function Plus(){
+        z = document.getElementById("sum").value;
+
+        if(z == x+y) alert("정답입니다."); 
+        else alert("오답입니다. 다시 입력해 주세요.")
+    };
+    
+</script>
+<form>
+    덧셈결과: <input typte="text" id=sum value="" size=10>
+    <button type="button" onclick="Plus()">결과 확인</button>
+</form>
+</body>
+</html>
