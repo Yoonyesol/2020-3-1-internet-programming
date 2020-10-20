@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>난수 10개 생성</title>  
+</head>
+<body>
+    <h1>난수 10개 생성</h1><hr>
+<script>
+    var myArray = new Array();
+
+    for(var i=0; i<10; i++){
+        myArray[i] = Math.floor(Math.random() * 100) + 1;
+        for(j=0; j<i; j++){            //중복제거 코드
+         if(myArray[i] == myArray[j]){
+            i--;
+            break;
+            }
+        }
+    }
+    var max = Math.max.apply(null, myArray);
+    document.writeln(myArray);
+</script>
+<hr>
+<script>
+    myArray.sort(function (a, b) { return a - b }); //오름차순 정렬
+    document.write("제일 큰 수는 " + max + "입니다.");
+</script>
+<hr>
+<script>
+    document.writeln(myArray);
+</script>
+</body>
+</html>
+
+
+

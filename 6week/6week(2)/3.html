@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>DOM 객체 동적 구성</title>
+<script>
+function answer(obj, text) {
+   var parent = obj.parentElement;
+   if(obj!=parent.lastElementChild) return;
+   var np = document.createElement("p");
+   np.innerHTML=text;
+   parent.appendChild(np);
+}
+</script>
+</head>
+<body>
+    <div>
+        <p>Q.거울아 거울아 누가 제일 예쁘니?<br></p>
+            <button type="button" onclick="answer(this, '백설공주')">답보기</button>
+    </div>
+    <div><p>Q.죽느냐 사느냐 어떤 것이 문제인가?<br></p>
+        <button type="button" onclick="answer(this, '둘다')">답보기</button>
+    </div>
+</body>
+</html>

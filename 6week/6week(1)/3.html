@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iframe2</title>  
+</head>
+<body>
+    <h1>메뉴를 선택하세요</h1>
+    <form id="mycheck">
+        <input type="checkbox" id="jj" value="짜장">
+        <label for ="jj"> 짜장 </label><br>
+        <input type="checkbox" id="jb" value="짬뽕">
+        <label for ="jb"> 짬뽕 </label><br>
+        <input type="checkbox" id="hb" value="햄버거">
+        <label for ="hb"> 햄버거 </label><br>
+        <input type="button" value="주문완료" onclick="checkvalue()">
+        <br>
+        <br>
+        <br>
+    </form>
+
+    <script>
+        function checkvalue(){
+            var checkArr = document.getElementById("mycheck");
+            for(i=0; i<checkArr.length; i++){
+                if(checkArr[i].checked)
+                document.write(checkArr[i].value+" ");
+            }
+            document.write("을(를) 주문했습니다.");
+        }
+    </script>
+</body>
+</html>
