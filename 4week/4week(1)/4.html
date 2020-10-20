@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>온도 계산</title>
+</head>
+<body>
+<h3>온도계산</h3>
+<hr>
+<script>
+    var ret = prompt("섭씨 온도를 입력하세요"); //ret이라는 변수가 사용자에게서 입력받은 값을 저장한다.
+    if(ret == null) { 
+        document.write("취소버튼을 누르셨습니다.");
+    }
+    else if(ret == "") {
+        document.write("값을 입력하지 않았습니다.");
+    }
+    else {
+        var fts = ret * 1.8 + 32;
+        document.write(ret + "℃ = "+ fts + "℉");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+          <script>
+            //테이블 생성 태그를 연다.
+            document.write("<table border = '1';");
+            document.write("<tr><td>섭씨온도</td><td>화씨온도</td></tr>");
+            
+            // for문 시작
+            for (var i=0; i<=10 ; i++) {
+                var f =  i * 1.8 + 32;
+                document.write("<tr><td>"+ i +"</td>" + "<td>"+ f +"</td></tr>"); //<tr> : 행추가.
+            } //end for i
+           
+            document.write("</table>");   // 테이블 태그를 닫는다.
+           
+            </script>
+            <br>
+            <hr>
+
+            <table border="1"> 
+                <tbody>
+                    <tr><td>섭씨온도</td><td>화씨온도</td></tr>
+                    <tr><td>0</td><td>32</td></tr>
+                    <tr><td>1</td><td>33.8</td></tr>
+                    <tr><td>2</td><td>35.6</td></tr>
+                    <tr><td>3</td><td>37.4</td></tr>
+                    <tr><td>4</td><td>39.2</td></tr>
+                    <tr><td>5</td><td>41</td></tr>
+                    <tr><td>6</td><td>42.8</td></tr>
+                    <tr><td>7</td><td>44.6</td></tr>
+                    <tr><td>8</td><td>46.4</td></tr>
+                    <tr><td>9</td><td>48.2</td></tr>
+                    <tr><td>10</td><td>50</td></tr>
+                </tbody>    
+            </table> 
+    </body>
+</html>

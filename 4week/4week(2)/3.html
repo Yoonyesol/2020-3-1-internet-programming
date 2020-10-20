@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>while 문</title>
+<script>
+    function Hap(n) { // 함수 작성
+    var n = parseInt(n); // 문자열 n을 숫자로 바꿈
+    if(n>100) { 
+		alert("정수"+n+",은 100보다 작지 않습니다.");
+	} else {
+        var i=0, sum=0;
+        while(i<=n) { // i가 0에서 n까지 반복
+            sum += i;
+            i++;
+    }  
+         alert(sum);
+    }
+}
+</script>
+</head>
+<body>
+<script>
+    var n = prompt("100미만의 정수만 입력", ""); 
+    Hap(n);	
+</script>
+</body>
+</html>
