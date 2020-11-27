@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script></script>
+    </head>
+    <body>
+        <script>
+            var ret = prompt("이 페이지에는 출력하려는 삼각형의 층수를 입력하세요.", "")
+            for(var i=ret; i>0; i--){ 
+                for(var j=0; j>i; j++){
+                    document.write(" ");
+                } 
+                document.write("----");
+                document.write("<br>")
+            }
+
+            document.writeln();
+           
+            for(var i=0; i<ret; i++){ 
+                for(var j=ret/2; j>=0; j--){
+                    document.write(" ");
+                }
+                document.write("----");
+               document.writeln();
+            } 
+            
+            
+        </script>
+    </body>
+</html>

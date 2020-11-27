@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function AddNewRow(obj, text){
+                var parent = obj.parentElement;
+                if(obj!=parent.lastElementChild) return;
+                var np = document.createElement("p");
+                np.innerHTML = text;
+                parent.appendChild(np);
+            }
+        </script>
+    </head>
+    <body>
+        
+        <button id="row" onclick="AddNewRow()">add_new_row</button>
+        <button id="col">add_new_col</button>
+        <table border="1">
+            <thead>
+                <tr><th style="background-color: green;">Header1</th>
+                    <th style="background-color: green;">Header2</th></tr></thead>
+            <tbody>
+                <tr></tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
